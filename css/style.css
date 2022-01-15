@@ -11,8 +11,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-.header_part , .last_section{
-     /* width: 1200px; */
+.header_part , .last_section{ 
     margin:0px 120px;
     padding: 0;
     height: 100hv;
@@ -94,9 +93,6 @@ nav{
 }
 .shopping_site{
     margin-top: 70px;
-    /* width: 1140px; */
-    /* height: 110px; */
-    
     padding: 36px 20px;
     border-top: 1px solid #AAAAAA;
     border-bottom: 1px solid #AAAAAA;
@@ -108,8 +104,7 @@ nav{
 
 
 .product_list{
-    /* width: 1047px; */
-    /* height: 1662px; */
+    
     margin: 100px 196px;
 
 }
@@ -125,8 +120,7 @@ nav{
     cursor: pointer;
 }
 .product{
-    /* width: 329px; */
-    /* height: 476px; */
+    
     box-shadow:0px 3px 5px rgba(0,0,0,.4);
     border-radius: 5px;
     overflow: hidden;
@@ -136,8 +130,7 @@ nav{
      transition: transform .7s;
  }
  .product img{
-      /* width: 300px; */
-      /* height: 256px; */
+      
       border-radius: 5px;
       padding: 16px;
       width: 100%;
@@ -232,7 +225,7 @@ nav{
 /* ---------------Footer part ---------------
 --------------------- */
 footer{
-    /* width: 1440px; */
+    
     height: 239px;
     background-color: #0A0826;
 }
@@ -265,12 +258,12 @@ footer{
 /* ------------------Footer end-----------------
 ----------------------- */
 
-/* ---------------Responsive screen part start----------
+/* ---------------Responsive Mobile  view start----------
 ------------- */
 @media only screen and (max-width:688px) {
 
     .nav_left{
-  
+      width: 100%;
       text-align:center;      
     }
     .intro{
@@ -283,6 +276,11 @@ footer{
     }
     .left_part{
         order: 2;
+    }
+    .left_part h1{
+        font-size: 35px;
+        line-height: 42px;
+        padding-bottom: 10px;
     }
     .nav_left h2{
         font-size: 16px;
@@ -298,9 +296,11 @@ footer{
       flex-direction: column;
       align-items: center;
       overflow: hidden;
+      
    }
    .product_list{
        margin: 0px;
+      
    }
    .extra_add{
       display: flex;
@@ -312,7 +312,8 @@ footer{
        order: 1;
    }
    .last_leftpart h1{
-       font-size: 40px;
+       font-size: 30px;
+       line-height: 45px;
    }
    .form_input input{
        border-radius: 10px;
@@ -334,12 +335,17 @@ footer{
    }
 }
 
+/* ------------------Mobile view end-----------------
+----------------- */
+
+
+/* -------------------Tablet view start----------
+---------------- */
+
+
 @media only screen and (min-width:688px) and (max-width:988px) {
 
-    .nav_left{
-  
-        text-align:center;      
-      }
+    
       .intro{
          display: flex;
          flex-direction: column;
@@ -350,6 +356,11 @@ footer{
       }
       .left_part{
           order: 2;
+      }
+      .nav_left{
+          text-align: center;
+          width: 100%;
+          
       }
       .nav_left h2{
           font-size: 24px;
@@ -366,9 +377,7 @@ footer{
         grid-template-columns: repeat(2,1fr);
 
      }
-     /* .last_leftpart{
-        order: 1;
-    } */
+    
     .last_leftpart h1{
         font-size: 40px;
     }
@@ -386,3 +395,6 @@ footer{
     }
     
 }
+
+/* ----------------Tablet view end-----------------
+------------------------ */
